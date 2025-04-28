@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Running tests...\" && exit 0",
-    "prepare": "husky"
+    "lint": "eslint . --ext .js,.jsx",
+    "format": "prettier --write .",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.1",
@@ -16,6 +18,15 @@
     "husky": "^9.1.7",
     "lint-staged": "^15.5.1",
     "prettier": "^3.5.3"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "**/*.{html,css,json,md}": [
+      "prettier --write"
+    ]
   },
   "author": "",
   "license": "ISC"
