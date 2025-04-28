@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>팀 소개 페이지</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>팀 이름: 예시팀</h1>
+    </header>
+
+    <section class="team-members">
+      <h2>팀원 목록</h2>
+      <ul>
+        <li>
+          <h3>홍길동</h3>
+          <p>진행한 업무: 이슈 템플릿 지정, 린트 설정</p>
+          <a href="https://github.com/홍길동" target="_blank">GitHub</a>
+          <a href="https://blog.naver.com/홍길동" target="_blank">블로그</a>
+        </li>
+        <li>
+          <h3>김철수</h3>
+          <p>진행한 업무: CI/CD 파이프라인 구축</p>
+          <a href="https://github.com/김철수" target="_blank">GitHub</a>
+          <a href="https://blog.naver.com/김철수" target="_blank">블로그</a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 예시팀. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .team-members {
+    padding: 20px;
+  }
+
+  .team-members h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .team-members ul {
+    list-style: none;
+  }
+
+  .team-members li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .team-members h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .team-members p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .team-members a {
+    color: #0073e6;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+</style>
